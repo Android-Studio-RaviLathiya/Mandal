@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0052cc</color>
+    <color name="colorPrimaryDark">#0052cc</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="appcolor">#0052cc</color>
+    <color name="Secondcolor">#F1F8FF</color>
+
+<!--    <color name="appcolor">#FEB209</color>-->
+    <color name="datebox">#D5ECFF</color>
+
+    <color name="credit">#FF0000</color>
+    <color name="debit">#33ff33</color>
+    <color name="interest">#BDBDBD</color>
+
+    <color name="call">#35C335</color>
+
+    <color name="blue">#1374E7</color>
+
+
+</resources>

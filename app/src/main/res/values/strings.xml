@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mandal</string>
+    <string name="Rs">\u20B9</string>
+    <string name="call">Call</string>
+    <string name="delete">Delete</string>
+
+</resources>

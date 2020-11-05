@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.MemberDetailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/desboardbox">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/leftarror" />
+
+                    <TextView
+                        android:id="@+id/membernumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="102"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/antic" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/member_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Manda"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:fontFamily="@font/antic" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Manda"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            app:fontFamily="@font/antic" />
+
+                        <TextView
+                            android:id="@+id/mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Manda"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:visibility="gone"
+                            app:fontFamily="@font/antic" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:layout_width="08dp"
+                                android:layout_height="08dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/debitbox" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="Debit"
+                                android:textColorHint="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="2dp"
+                                android:hint="0"
+                                android:text="@string/Rs"
+                                android:textColor="@color/debit"
+                                android:textColorHint="@color/white"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/memberDebit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="0"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="08dp"
+                                android:layout_height="08dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/credibox" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="Credit"
+                                android:textColorHint="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dp"
+                                android:hint="0"
+
+                                android:text="@string/Rs"
+                                android:textColor="@color/credit"
+                                android:textColorHint="@color/white"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/memberCredit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="0"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="08dp"
+                                android:layout_height="08dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/intressbox" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="Interest"
+                                android:textColorHint="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dp"
+                                android:text="@string/Rs"
+                                android:textColor="@color/interest"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/memberInterest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="0"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/call"
+                android:onClick="call"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/phone" />
+
+
+        </RelativeLayout>
+
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:background="@color/appcolor">-->
+
+        <!--         -->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:fontFamily="@font/antic"-->
+        <!--                android:text="Member Detail"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="18dp" />-->
+
+        <!--        </RelativeLayout>-->
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="130dp"-->
+        <!--            android:background="@drawable/desboardbox"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            <RelativeLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="25dp">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginLeft="10dp"-->
+        <!--                    android:orientation="vertical">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/membernumber"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="1111"-->
+        <!--                        android:textColor="@color/white"-->
+        <!--                        android:textSize="14dp" />-->
+
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="Name"-->
+        <!--                        android:textColor="@color/white"-->
+        <!--                        android:textSize="14dp" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/mobile"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="1234567890"-->
+        <!--                        android:textColor="@color/white"-->
+        <!--                        android:textSize="14dp" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/address"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="address"-->
+        <!--                        android:textColor="@color/white"-->
+        <!--                        android:textSize="14dp" />-->
+
+
+        <!--                </LinearLayout>-->
+
+        <!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_width="150dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_alignParentEnd="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:layout_marginRight="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    android:orientation="vertical">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_width="150dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_height="wrap_content">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <Button&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="08dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="08dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:background="@drawable/credibox" />&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginLeft="08dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:text="Credit"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textSize="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textStyle="bold" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:gravity="right"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal">&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentEnd="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="@string/Rs"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textColor="#ff0000"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textSize="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                 android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentEnd="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_marginLeft="05dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="1500"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textSize="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_width="150dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:orientation="horizontal">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <Button&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="8dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="8dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:background="@drawable/debitbox" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginLeft="08dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:text="Debit"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textSize="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textStyle="bold" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_gravity="right"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:gravity="right">&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentEnd="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="@string/Rs"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textColor="@color/debit"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textSize="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                       android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentEnd="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_marginLeft="05dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="1500"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textSize="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_width="150dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;                        android:orientation="horizontal">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <Button&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="08dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="08dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:background="@drawable/intressbox" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_marginLeft="08dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:text="Interest"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textSize="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:textStyle="bold" />&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:gravity="right"&ndash;&gt;-->
+        <!--&lt;!&ndash;                            android:orientation="horizontal">&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentEnd="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="@string/Rs"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textColor="@color/interest"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textSize="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentEnd="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:layout_marginLeft="05dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:text="1500"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                                android:textColor="@color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textSize="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+        <!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+        <!--                -->
+        <!--                      -->
+        <!--            </RelativeLayout>-->
+
+        <!--        </LinearLayout>-->
+
+
+        <!-- The ConstraintLayout can be replaced by FrameLayout, LinearLayout, etc. -->
+        <!-- Your content view goes here. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Date"
+                android:textColor="#000"
+                android:textSize="22dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Credit"
+                android:textColor="@color/credit"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Interest"
+                android:textColor="@color/blue"
+                android:textSize="22dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="No Credit!"
+                android:textSize="22dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="05dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/add_credit"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/appbox"
+        android:fontFamily="@font/antic"
+        android:text="Add Credit"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

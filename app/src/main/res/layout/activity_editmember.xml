@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/appcolor"
+    tools:context=".Activity.EditmemberActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appcolor">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/leftarror" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/antic"
+            android:text="Edit Member Detail"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/no"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:hint="Member Number"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="05dp"
+            android:fontFamily="@font/antic"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginBottom="05dp"
+            android:hint="Name"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/antic"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginBottom="05dp"
+            android:fontFamily="@font/antic"
+            android:layout_marginTop="10dp"
+            android:hint="Address"
+            android:textColorHint="@color/white"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/mo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginBottom="05dp"
+            android:maxLength="10"
+            android:hint="Mobile Number"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/antic"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@color/black"
+        android:fontFamily="@font/antic"
+        android:text="update"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>
